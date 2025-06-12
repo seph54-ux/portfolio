@@ -13,7 +13,6 @@ hamburgerBtn.addEventListener('click', () => {
   navbarLinks.classList.toggle('d-none');
 });
 
-
 //Dark Mode Toggle and Logo Switch
 const toggle = document.querySelector('#dark-mode-toggle');
 const logoImg = document.getElementById('site-logo');
@@ -43,8 +42,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const isDark = document.body.classList.contains('dark-mode');
   updateLogoBasedOnTheme(isDark);
 });
-
-
 
 // Smooth Scrolling
 document.addEventListener("DOMContentLoaded", () => {
@@ -79,10 +76,8 @@ window.addEventListener("load", () => {
         scrollRef <= 10 ? scrollRef++ : AOS.refresh();
     });
 });
-
-
 // Read More for Portfolio Caption
-  function toggleCaption() {
+function toggleCaption() {
     const text = document.getElementById("captionText");
     const btn = document.querySelector(".read-more-btn");
 
@@ -254,19 +249,42 @@ document.querySelectorAll('.modal-trigger-ui').forEach(img => {
   });
 });
 
-// EmailJS integration for contact form
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
+const form = document.getElementById('contact-form');
 
-       emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this, EMAILJS_PUBLIC_KEY)
-        .then(function() {
-          alert('Message sent successfully!');
-          document.getElementById('contact-form').reset();
-        }, function(error) {
-          alert('Failed to send the message. Please try again later.');
-          console.error('EmailJS error:', error);
-        });
+// Show and hide modals
+function showModal(id) {
+  document.getElementById(id).style.display = 'flex';
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+// EmailJS integration with modal feedback
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const name = form.elements['name'].value.trim();
+  const email = form.elements['email'].value.trim();
+  const message = form.elements['message'].value.trim();
+  const isValidEmail = /^\S+@\S+\.\S+$/.test(email);
+
+  if (!name || !email || !message || !isValidEmail) {
+    showModal('errorModal');
+    return;
+  }
+
+  emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this, EMAILJS_PUBLIC_KEY)
+    .then(() => {
+      showModal('successModal');
+      form.reset();
+    })
+    .catch((error) => {
+      console.error('EmailJS error:', error);
+      showModal('errorModal');
     });
+});
+
 
 //Modal for video cards
   document.querySelectorAll('.video-card').forEach(card => {

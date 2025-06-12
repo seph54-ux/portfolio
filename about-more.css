@@ -1,0 +1,52 @@
+.about-more-content h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  color: #FF1F1F;
+}
+
+body.dark-mode .about-more-content h1 {
+  color: #ffff1f;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.blog-cards .btn {
+  border-radius: 24px;
+  font-weight: 500;
+  border-color: #FF1F1F !important;
+  color: #FF1F1F !important;
+}
+
+.blog-cards .btn:hover {
+  background-color: #FF1F1F !important;
+  color: #fff !important;
+}
+
+body.dark-mode .blog-cards .btn {
+  border-color: #ffff1f !important;
+  color: #ffff1f !important;
+}
+
+body.dark-mode .blog-cards .btn:hover {
+  background-color: #ffff1f !important;
+  color: #272727 !important;
+}
+
+body.dark-mode .card{
+    background: #272727;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+body.dark-mode .card-title {
+    color: #f9f9f9;
+}
