@@ -1,38 +1,46 @@
-🎨 Ace’s Graphic Design Portfolio
-Welcome to my personal portfolio repository, crafted to showcase my passion and expertise in graphic design 🎯 — from esports visuals, branding logos, and stream overlays to UI mockups and more.
+# 🎨 Philjoseph Orlina’s Graphic Design Portfolio
 
-This site is more than just a display — it’s a reflection of how I blend creativity with code to express stories through design.
+Welcome to my **personal portfolio repository**, crafted to showcase my **passion and expertise in graphic design** 🎯 — from **esports visuals**, **branding logos**, and **stream overlays**, to **UI mockups** and more.
 
-🧰 Tech Stack
-This portfolio is built with a strong front-end foundation using:
+This site is more than just a display — it's a **fusion of creativity and code**, telling stories through design with functionality and flair.
 
-HTML5
+---
 
-CSS3 (with custom styles and utility class integrations)
+## 🧰 Tech Stack
 
-JavaScript (ES6)
+This portfolio is powered by a solid front-end combo:
 
-Bootstrap 5.3.6
+- **HTML5**
+- **CSS3** *(with custom styling and utility class integrations)*
+- **JavaScript (ES6)**
+- **Bootstrap 5.3.6**
 
-⚙️ Frameworks & Libraries Used
-AOS (Animate On Scroll) — for smooth and responsive scroll animations ✨
+---
 
-iTyped — to add dynamic typewriter effects on headers 🧠
+## ⚙️ Frameworks & Libraries Used
 
-Splide.js — used in my "My Works" section to create interactive and responsive carousels 🖼
+- **AOS (Animate On Scroll)** — smooth, responsive scroll animations ✨  
+- **iTyped** — dynamic typewriter effect for headers 🧠  
+- **Splide.js** — interactive carousels in the “My Works” section 🖼  
+- **EmailJS** — client-side email handling for the contact form 📩  
 
-EmailJS — for handling contact form submissions via email without backend setup 📩
+---
 
-🚀 Features
-🖼 Showcase gallery of my works categorized for easy navigation
+## 🚀 Features
 
-💬 Contact form with modal popups for submission feedback
+- 🖼 **Showcase Gallery** — categorized visual display of works  
+- 💬 **Contact Form** — with **stylized modal popups** for success/error feedback  
+- 🧠 **More About Me** — a deep dive into my journey from gamer to designer  
+- 📱 **Fully Responsive** — optimized layout across devices  
+- 🔍 **SEO-Optimized** — clean structure with proper `<meta>` tags  
 
-🧠 "More About Me" section revealing my creative journey as a gamer-turned-designer
+---
 
-📱 Fully responsive design across all devices
+## 🔗 Live Website
 
-🎯 SEO-optimized structure with proper meta tagging
+👉 [**Click here to visit my portfolio**](https://philjosephorlina.vercel.app/)
 
-🔗 Live Website
-👉 https://philjosephorlina.vercel.app/
+---
+
+> Feel free to clone this repo or get inspiration for your own creative projects.  
+> Star ⭐ if you like it!
